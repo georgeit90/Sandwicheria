@@ -1,11 +1,12 @@
 <?php
-class usuarios extends Admin {
+class Usuarios extends Admin {
 	function __construct() {
 		parent::__construct ();
-		$this->view->title="usuarios";
+		$this->view->title="Usuarios";
 		$this->view->js= array("usuarios/js/default.js","usuarios/js/gadgets.js");
-		$this->view->menu= "views/general/menu.php";
+		$this->view->menu= "views/layout/admin/menu.php";
 		$this->view->layout= "views/layout/";
+		$this->view->page= "usuarios";
 		
 	}
 	

@@ -162,10 +162,12 @@ function Save(){
    
 	
 		 url+="1";
-		 alert(data);
+
 		 $.post(url, data,function(o){
 //			 alert(data);
 		 });
+		 Show_Fields(1,tdIdUsuario,tdNombre,tdAppellido1,tdAppellido2,tdTelefono,tdCorreo,tdPassword,tdRol);
+         h_fields=0;		 
 		 return false; 
 		 
 		if(h_save==1){
@@ -178,8 +180,8 @@ function Save(){
 		   h_save=1;	
 	  }
 		
-		Show_Fields(1,tdIdUsuario,tdNombre,tdAppellido1,tdAppellido2,tdTelefono,tdCorreo,tdPassword,tdRol);	
-		h_fields=0;
+		
+		
 	}
 	
    

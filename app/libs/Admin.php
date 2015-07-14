@@ -7,9 +7,9 @@ class Admin extends Controller {
 		$start=Session::init();
 		$logged= Session::get("loggedIn");
 		$name = Session::get("nombre");
-		
+		$rol = Session::get("rol");
 
-		if($logged == false){
+		if($logged == false || $rol!=1){
 			Session::destroy();
 			header('location: login');
 			exit;
@@ -17,12 +17,12 @@ class Admin extends Controller {
 		$this->view->title='Admin';
 		$this->view->name=$name;
 		$this->view->rol="Admin";
-		$this->view->menu= 'views/general/menu.php';
+		$this->view->menu= 'views/layout/admin/menu.php';
 		$this->view->layout= 'views/layout/';
 		
+		
 	}
-	function Index() {	
-	}
+	
 
 	function Logout(){
 		session_destroy();

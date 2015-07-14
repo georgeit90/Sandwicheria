@@ -16,7 +16,7 @@
                           Mesas                       </h1>
                         <ol class="breadcrumb">
                             <li>
-                                <i class=""></i>Disponibles  <a href=""></a>
+                                <i class=""></i>Disponibles    <a href="" id="Dispon"></a>
                             </li>
                         </ol>
                     </div>
@@ -25,13 +25,17 @@
 
                     <form method="post" name="" id = "" action='<?php echo URL ;?>/guardar/'>
                     <div class="row" id="tables">
-						<div class="col-xs-6 col-lg-4">
-						  <h2>Heading</h2>
-						  <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-						  <p><a role="button" href="#" class="btn btn-default">View details »</a></p>
-						</div><!--/.col-xs-6.col-lg-4-->
+					     
                     </div>
+					
+                    <ul class="pagination">
+						  <li><a id="btnPiso1" class="btnPiso" >1</a></li>
+						  <li><a id="btnPiso2" class="btnPiso" >2</a></li>
+					</ul>
+                        
+                    
                     </from>
+					 
 
             </div>
             <!-- /.container-fluid -->

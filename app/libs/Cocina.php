@@ -7,8 +7,9 @@ class Cocina extends Controller {
 		$start=Session::init();
 		$logged= Session::get("loggedIn");
 		$name = Session::get("nombre");
+		$rol = Session::get("rol");
 
-		if($logged == false){
+		if($logged == false || $rol!=3){
 			Session::destroy();
 			header('location: login');
 			exit;

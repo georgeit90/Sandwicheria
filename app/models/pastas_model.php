@@ -34,11 +34,7 @@ class Pastas_Model extends Model {
 		public function Listar() {
 		$sth = $this->db->prepare("SELECT idPasta, descripcion, cantidad, unidadMedida FROM pasta");
 	    $sth->execute(); 
-	    
-	    while ($row = $sth->fetch()) { 
-	    $data[]=array("idPasta"=>$row["idPasta"],"descripcion"=>$row["descripcion"],"cantidad"=>$row["cantidad"],"unidadMedida"=>$row["unidadMedida"] ); 
-	    }
-	    
+	    $data=$sth->fetchAll(); 
 		echo json_encode($data); 
 		}
 	

@@ -6,5 +6,4 @@ class Platos_Model extends Model {
 	parent::__construct(); 
 	}
 	
-		
-	}
+}

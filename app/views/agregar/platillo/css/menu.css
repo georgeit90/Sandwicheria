@@ -1,0 +1,51 @@
+/* make sidebar nav vertical */ 
+@media (min-width: 768px) {
+  .sidebar-nav .navbar .navbar-collapse {
+    padding: 0;
+    max-height: none;
+  }
+  .sidebar-nav .navbar ul {
+    float: none;
+  }
+  .sidebar-nav .navbar ul:not {
+    display: block;
+  }
+  .sidebar-nav .navbar li {
+    float: none;
+    display: block;
+  }
+  .sidebar-nav .navbar li a {
+    padding-top: 12px;
+    padding-bottom: 12px;
+  }
+   .sidebar-nav {
+    height:200px;
+	overflow: scroll;
+	overflow-x: hidden;
+   }
+   
+    .nav-header{
+    background-color: #e7e7e7;
+    color: #555;
+	padding-top: 12px;
+    padding-bottom: 12px;
+   }
+   
+     .nav-header i:hover{
+    cursor: pointer;
+	color:#337ab7;
+   }
+   .ingretMenu{
+   display:none;
+   }
+   
+   #subPlatillo{
+    background-color:white;
+   }
+   
+    .remove:hover{
+    color:#d9534f;
+	cursor: pointer;
+   }
+   
+}

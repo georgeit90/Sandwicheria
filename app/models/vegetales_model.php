@@ -34,11 +34,7 @@ class Vegetales_Model extends Model {
 		public function Listar() {
 		$sth = $this->db->prepare("SELECT idVegetal, descripcion, cantidad, unidadMedida FROM vegetal");
 	    $sth->execute(); 
-	    
-	    while ($row = $sth->fetch()) { 
-	    $data[]=array("idVegetal"=>$row["idVegetal"],"descripcion"=>$row["descripcion"],"cantidad"=>$row["cantidad"],"unidadMedida"=>$row["unidadMedida"] ); 
-	    }
-	    
+	    $data= $sth->fetchAll();
 		echo json_encode($data); 
 		}
 	

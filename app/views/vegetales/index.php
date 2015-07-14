@@ -24,7 +24,7 @@
                                 <a href="index.html">Dashboard</a>
                             </li>
                              <li>
-                                <a  href="<?php echo URL;?>platos">Platos</a>
+                            <a  href="<?php echo URL;?>ingredientes">Ingredientes</a>
                             </li>
                             <li class="active">
                                 <i class="fa fa-user"></i>  <?php if(isset($this->title))echo $this->title ?>

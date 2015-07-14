@@ -3,6 +3,7 @@ class Dashboard extends Admin {
 	function __construct() {
 	  parent::__construct ();
 	  $this->view->title='Dashboard';
+	  $this->view->page= "Dashboard";
 	}
 	
 	function Index() {

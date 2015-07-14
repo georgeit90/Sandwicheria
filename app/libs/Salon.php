@@ -8,15 +8,16 @@ class Salon extends Controller {
 		$logged= Session::get("loggedIn");
 		$name = Session::get("nombre");
         $rol = Session::get("rol");
-		if($logged == false && $rol==4){
+		if($logged == false || $rol!=4){
 			Session::destroy();
 			header('location: login');
 			exit;
 		}
 		$this->view->name =$name;
-	    $this->view->rol =$rol;
-		$this->view->menu = 'views/general/menu.php';
+	    $this->view->rol ="Salonero";
+		$this->view->menu = 'views/layout/salonero/menu.php';
 		$this->view->layout= 'views/layout/';
+		$this->view->page= "Salonero";
 		
 	}
 	function Index() {	

@@ -6,7 +6,7 @@ var h_fields=0;
 function Add(){
 	$("#tblVegetales").append(
 		"<tr id='tr_0'>" +
-    	 "<td><input  id='txtIdCarne' name='idCarne' type='text' /></td>"+
+    	 "<td><input  id='txtIdVegetal' name='idVegetal' type='text' /></td>"+
 		  "<td><input id='txtDescripcion' name='descripcion' type='text'/></td>"+
 		  "<td><input id='txtCantidad' name='cantidad' type='text'/></td>"+
 		  "<td><input id='txtUnidadMedida' name='unidadMedida'type='text'/></td>"+
@@ -195,8 +195,8 @@ function Confirm(){
 	
 }
 
-function Insert_Row(idCarne,descripcion,cantidad,unidadMedida){
-  $('#tblVegetales').append("<tr><td>"+idCarne+"</td><td>"+descripcion+"</td><td>"+cantidad+"</td><td>"+
+function Insert_Row(idVegetal,descripcion,cantidad,unidadMedida){
+  $('#tblVegetales').append("<tr><td>"+idVegetal+"</td><td>"+descripcion+"</td><td>"+cantidad+"</td><td>"+
 		  unidadMedida+"</td>" +
 		   +"<td><div class='tabledit-toolbar btn-toolbar' style='text-align: left;'>"+
 			"<div class='btn-group btn-group-sm' style='float: none;'>"+

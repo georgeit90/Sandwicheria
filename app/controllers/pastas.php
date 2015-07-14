@@ -4,8 +4,9 @@ class Pastas extends Controller {
 		parent::__construct ();
 		$this->view->title='Pastas';
 		$this->view->js= array("pastas/js/default.js","pastas/js/gadgets.js");
-		$this->view->menu= 'views/general/menu.php';
+	    $this->view->menu= "views/layout/admin/menu.php";
 		$this->view->layout= 'views/layout/';
+		$this->view->page= "pasta";
 		
 	}
 	function Index() {

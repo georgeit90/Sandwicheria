@@ -6,7 +6,7 @@ class Bootstrap {
 		$url = explode ( '/', $url );
 		//print_r($url);
 		if(empty($url[0])){
-			require 'controllers/index.php';
+			require 'controllers/Index.php';
 			$controller= new Index();
 			$controller->Index();
 			return false;
@@ -21,6 +21,7 @@ class Bootstrap {
 		} 
 		$controller = new $url [0];
 		$controller->loadModel($url[0]);
+		
 		
 		if (isset ( $url [2] )) {
 			//$controller->Index();

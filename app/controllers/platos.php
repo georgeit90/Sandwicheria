@@ -1,11 +1,12 @@
 <?php
-class Platos extends Controller {
+class Platos extends Admin {
 	function __construct() {
 		parent::__construct ();
 		$this->view->title='Platos';
 		$this->view->js= array("platos/js/default.js","platos/js/gadgets.js");
-		$this->view->menu= 'views/general/menu.php';
+		$this->view->menu= 'views/layout/admin/menu.php';
 		$this->view->layout= 'views/layout/';
+		$this->view->page= "platos";
 		
 	}
 	function Index() {

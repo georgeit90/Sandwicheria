@@ -9,7 +9,7 @@
     <title><?php if(isset($this->title))echo $this->title?></title>
 	
 	<!-- Bootstrap Core CSS -->
-    <link href='<?php echo URL;?>public/css/bootstrap.min.css' rel="stylesheet" type="text/css" />
+    <link href='<?php echo URL;?>public/bootstrap/css/bootstrap.min.css' rel="stylesheet"/>
 	   
 	<!-- Custom CSS -->
 	<link href='<?php echo URL;?>public/css/sb-admin.css' rel="stylesheet"/>
@@ -45,5 +45,5 @@
         
   <?php 	
    if(isset($this->layout))
-   require $this->layout."admin/header.php";
+   require $this->layout."header/header.php";
    ?>

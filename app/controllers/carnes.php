@@ -1,11 +1,12 @@
 <?php
-class Carnes extends Controller {
+class Carnes extends Admin{
 	function __construct() {
 		parent::__construct ();
 		$this->view->title='Carnes';
 		$this->view->js= array("carnes/js/default.js","carnes/js/gadgets.js");
-		$this->view->menu= 'views/general/menu.php';
+	    $this->view->menu= "views/layout/admin/menu.php";
 		$this->view->layout= 'views/layout/';
+		$this->view->page= "carnes";
 		
 	}
 	function Index() {
